@@ -1,12 +1,26 @@
 .header{
-    background-color: green;
-    padding: 30px;
     display: flex;
+    background-color: green;
+    padding: 15px;
+    @media screen and (min-width: 600px) {
+        padding: 30px; 
+    }
 }
 
+.logo{
+    width: 100px;
+    height: 68px;
+    @media screen and (min-width: 600px) {
+        width: 200px;
+        height: 136px;
+    }
+}
 .title{
     font-family: 'Roboto', sans-serif;
-    font-size: 4em;
+    font-size: 1em;
     padding: 30px;
     margin-left: 20px;
+    @media screen and (min-width: 600px) {
+        font-size: 4em;
+    }
 }

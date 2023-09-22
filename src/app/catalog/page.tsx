@@ -37,7 +37,7 @@ const Catalog = async () => {
             {dogs.record.map((dog:Dog, index:Key) => (
                 <li className={styles.dogListItem} key={index}>
                     <div className={styles.card}>
-                        <Image
+                        <Image className={styles.image}
                             src={dog.img.toString()}
                             alt={"image of dog.name"}
                             height={100}

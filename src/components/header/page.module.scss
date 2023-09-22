@@ -14,23 +14,25 @@
     width: 100px;
     height: 68px;
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 30px;
     @media screen and (min-width: $bp-large_medium) {
         width: 200px;
         height: 136px;
+        top: 40px;
     }
     @media screen and (min-width: $bp-medium) {
         width: 150x;
         height: 102px;
+        top: 40px;
     }
 }
 .title{
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     padding: 30px;
     margin-left: 20px;
     @media screen and (min-width: $bp-medium) {
-        font-size: 4em;
+        font-size: 3.5em;
     }
 }

@@ -6,7 +6,8 @@ export default function Home() {
   return (
     
     <main className={styles.main}>
-      <h1 className={styles.title}>Welcome to doggy daycare</h1>
+      <h1>Hi and welcome to Doggy Daycare</h1>
+      
     </main>
   )
 }

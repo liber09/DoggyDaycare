@@ -32,18 +32,18 @@ const getDogs = async () => {
 const Catalog = async () => {
     const dogs = await getDogs();
     return (
-        <div>
-            <ul>
+        <div className={styles.container}>
+            <ul className={styles.dogList}>
             {dogs.record.map((dog:Dog, index:Key) => (
-                <li key={index}>
-                    <p>Name: {dog.name}</p>
-                    <p>Sex: {dog.sex}</p>
-                    <p>Age: {dog.age.toString()}</p>
-                    <p>Breed: {dog.breed}</p>
-                    <p>Owner: {dog.owner.name}</p>
-                    <p>_____________________</p>
-                
-                    </li>
+                <li className={styles.dogListItem} key={index}>
+                    <div className={styles.card}>
+                        <p>Name: {dog.name}</p>
+                        <p>Sex: {dog.sex}</p>
+                        <p>Age: {dog.age.toString()}</p>
+                        <p>Breed: {dog.breed}</p>
+                        <p>Owner: {dog.owner.name}</p>
+                    </div>
+                </li>
             ))}
         </ul>
         </div>

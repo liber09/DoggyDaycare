@@ -1,0 +1,17 @@
+@import '/src/styles/variables.scss';
+.dogList{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.dogListItem{
+    list-style: none;
+}
+
+.card{
+    background-color: $c-cardColor;
+    margin: $mg-large;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    border-radius: $br-normal;
+}

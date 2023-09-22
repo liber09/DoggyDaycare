@@ -87,7 +87,7 @@
       }
       
       .main_menu{
-      background-color: $c-pink;
+      background-color: $c-menuBackground;
       position: absolute;
       top: 1em;
       left: 1em;
@@ -136,7 +136,7 @@
 @media (min-width: $bp-medium){
   .main_nav{
       display: block;
-      background-color: $c-pink;
+      background-color: $c-menuBackground;
       padding-top: 2rem;
   }
 

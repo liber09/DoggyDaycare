@@ -148,21 +148,16 @@
   .main_menu_item{
       list-style-type: none;
       color:white;
-      text-decoration: none;
       padding: 0 0 20px 0;
       margin: 0 0 10px 0;
-      a{
-          color: white;
-          font-weight: bold;
-          font-size: 1.2em;
-          text-decoration: none;
-          padding: 0.8em 1.5em;
-          display: block;
-          transition: color 0.2s;
-
-          &:hover{
-              color: $c-hover;
-          }
+      font-size: 1.5em;
+      transition: color 0.2s;
+      &:hover{
+        color: $c-hover;
       }
+  }
+
+  .link{
+    text-decoration: none;
   }
 }

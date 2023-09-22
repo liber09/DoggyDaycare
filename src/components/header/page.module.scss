@@ -1,6 +1,8 @@
+@import '/src/styles/variables.scss';
+
 .header{
     display: flex;
-    background-color: hotpink;
+    background-color: $c-pink;
     padding: 15px;
     @media screen and (min-width: 600px) {
         padding: 30px; 

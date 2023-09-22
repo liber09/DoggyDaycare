@@ -6,7 +6,7 @@ interface Dog{
     name: String;
     sex: String;
     breed: String;
-    img: String;
+    img: string;
     present: boolean;
     age: Number;
     chipNumber: String;
@@ -37,6 +37,12 @@ const Catalog = async () => {
             {dogs.record.map((dog:Dog, index:Key) => (
                 <li className={styles.dogListItem} key={index}>
                     <div className={styles.card}>
+                        <Image
+                            src={dog.img.toString()}
+                            alt={"image of dog.name"}
+                            height={100}
+                            width={100}
+                        ></Image>
                         <p>Name: {dog.name}</p>
                         <p>Sex: {dog.sex}</p>
                         <p>Age: {dog.age.toString()}</p>

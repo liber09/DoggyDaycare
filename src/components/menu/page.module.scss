@@ -49,7 +49,6 @@
       }
 
   }
-  
 
   .main_menu{
       display: none;
@@ -148,6 +147,10 @@
 
   .main_menu_item{
       list-style-type: none;
+      color:white;
+      text-decoration: none;
+      padding: 0 0 20px 0;
+      margin: 0 0 10px 0;
       a{
           color: white;
           font-weight: bold;

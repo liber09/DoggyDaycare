@@ -1,23 +1,8 @@
 import { Key } from 'react';
 import styles from './page.module.scss'
 import Image from 'next/image';
-
-interface Dog{
-    name: String;
-    sex: String;
-    breed: String;
-    img: string;
-    present: boolean;
-    age: Number;
-    chipNumber: String;
-    owner: Owner;
-}
-
-interface Owner{
-    name: String;
-    lastName: String;
-    phoneNumber: String;
-}
+import Link from 'next/link';
+import Dog from '../types/dog';
 
 const getDogs = async () => {
     const res = await fetch('https://api.jsonbin.io/v3/b/650d039e12a5d37659816079');
@@ -35,21 +20,23 @@ const Catalog = async () => {
         <div className={styles.container}>
             <ul className={styles.dogList}>
             {dogs.record.map((dog:Dog, index:Key) => (
-                <li className={styles.dogListItem} key={index}>
-                    <div className={styles.card}>
-                        <Image className={styles.image}
-                            src={dog.img.toString()}
-                            alt={"image of dog.name"}
-                            height={100}
-                            width={100}
-                        ></Image>
-                        <p>Name: {dog.name}</p>
-                        <p>Sex: {dog.sex}</p>
-                        <p>Age: {dog.age.toString()}</p>
-                        <p>Breed: {dog.breed}</p>
-                        <p>Owner: {dog.owner.name}</p>
-                    </div>
-                </li>
+                <Link href={'/details'}>
+                    <li className={styles.dogListItem} key={index}>
+                        <div className={styles.card}>
+                            <Image className={styles.image}
+                                src={dog.img.toString()}
+                                alt={"image of dog.name"}
+                                height={100}
+                                width={100}
+                            ></Image>
+                            <p>Name: {dog.name}</p>
+                            <p>Sex: {dog.sex}</p>
+                            <p>Age: {dog.age.toString()}</p>
+                            <p>Breed: {dog.breed}</p>
+                            <p>Owner: {dog.owner.name}</p>
+                        </div>
+                    </li>
+                </Link>
             ))}
         </ul>
         </div>

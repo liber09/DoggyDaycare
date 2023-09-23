@@ -1,9 +1,28 @@
 @import '/src/styles/variables.scss';
 .dogList{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+        grid-template-columns: 1fr;
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    @media screen and (min-width: $bp-medium) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+    @media screen and (min-width: $bp-large_medium) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+    @media screen and (min-width: $bp-large) {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-column-gap: 25px;
+        grid-row-gap: 25px;
+    }
+
 }
 .dogListItem{
     list-style: none;

@@ -1,9 +1,9 @@
 @import '/src/styles/variables.scss';
 .dogList{
-    display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 25px;
-        grid-row-gap: 25px;
+    display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
     @media screen and (min-width: $bp-medium) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -36,11 +36,28 @@
     margin: $mg-large;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
     border-radius: $br-normal;
-    padding: 15px;
+    width: 300px;
 }
 
 .image{
-    border-radius: 100px;
-    width: 150px;
-    height: 150px;    
+    width: 300px;
+    height: 300px;
+    margin-top: 0;
+    border-radius: $br-normal $br-normal 0 0;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.dogName{
+    font-size: 2em;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.dogGender, .dogAge{
+    font: 1.5em;
+    font-style: italic;
 }

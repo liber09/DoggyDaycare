@@ -20,7 +20,7 @@ const Catalog = async () => {
         <div className={styles.container}>
             <ul className={styles.dogList}>
             {dogs.record.map((dog:Dog, index:Key) => (
-                <Link href={'/details'}>
+                <Link className={styles.link} href={'/details'}>
                     <li className={styles.dogListItem} key={index}>
                         <div className={styles.card}>
                             <Image className={styles.image}
@@ -29,11 +29,9 @@ const Catalog = async () => {
                                 height={100}
                                 width={100}
                             ></Image>
-                            <p>Name: {dog.name}</p>
-                            <p>Sex: {dog.sex}</p>
-                            <p>Age: {dog.age.toString()}</p>
-                            <p>Breed: {dog.breed}</p>
-                            <p>Owner: {dog.owner.name}</p>
+                            <p className={styles.dogName}>{dog.name}</p>
+                            <p className={styles.dogGender}>Gender: {dog.sex}</p>
+                            <p className={styles.dogAge}>Age: {dog.age.toString()}</p>
                         </div>
                     </li>
                 </Link>

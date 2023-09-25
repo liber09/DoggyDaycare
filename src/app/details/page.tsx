@@ -1,10 +1,10 @@
 import Dog from "@/app/types/dog";
 
-function DogDetails(searchParams?:[key: string] | string[]){
+function DogDetails(searchParams:string){
     let dog!:Dog;
     if (searchParams != undefined){
-        console.log(searchParams.toString);
-        //const obj = JSON.parse(searchParams.toString());
+        console.log(searchParams);
+        const obj = JSON.parse(searchParams);
         //dog = obj;
     }
     return(

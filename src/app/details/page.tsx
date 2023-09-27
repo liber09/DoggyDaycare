@@ -1,15 +1,20 @@
+"use client"
 import Dog from "@/app/types/dog";
+import { useSearchParams } from "next/navigation";
 
-function DogDetails(searchParams:string){
-    let dog!:Dog;
-    if (searchParams != undefined){
-        console.log(searchParams);
-        const obj = JSON.parse(searchParams);
-        //dog = obj;
-    }
+function DogDetails(){
+        
+        const searchParams = useSearchParams()
+        const obj = searchParams.get("object");
+        console.log(obj);
+        if(obj != null){
+            const dog = JSON.parse(obj);
+            console.log(dog);
+        }
+        
+    
     return(
-        //<p>{dog.name}</p> 
-        <p>detail</p>
+        <p>{dog.name}</p> 
     )
 }
 export default DogDetails;

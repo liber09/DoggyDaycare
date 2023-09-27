@@ -16,6 +16,9 @@ const getDogs = async () => {
 
 const Catalog = async () => {
     const dogs = await getDogs();
+    dogs.record.sort(function(x:Dog,y:Dog){
+        return(x.present === y.present) ? 0 : x.present? -1 : 1;
+    })
     return (
         <div className={styles.container}>
             <ul className={styles.dogList}>

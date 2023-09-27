@@ -1,0 +1,32 @@
+@import '/src/styles/variables.scss';
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $c-cardColor;
+    margin: $mg-large;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    border-radius: $br-normal;
+    width: 300px;
+}
+
+.dogName{
+    font-size: 3em;
+    font-weight: 800;
+    margin: 5px;
+    text-transform: uppercase;
+}
+.ownerName{
+    margin-right: 3px;
+}
+.ownerLastName{
+    margin-left: 3px;
+}

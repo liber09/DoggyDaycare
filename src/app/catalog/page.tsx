@@ -20,7 +20,7 @@ const Catalog = async () => {
         <div className={styles.container}>
             <ul className={styles.dogList}>
             {dogs.record.map((dog:Dog, index:Key) => (
-                <Link className={styles.link} href={{ pathname: '/details', query:{object: JSON.stringify(dog)}}}>
+                <Link key={dog.chipNumber} className={styles.link} href={{ pathname: '/details', query:{object: JSON.stringify(dog)}}}>
                     <li className={styles.dogListItem} key={index}>
                         <div className={styles.card}>
                             <Image className={styles.image}

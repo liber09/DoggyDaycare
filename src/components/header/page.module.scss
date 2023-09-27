@@ -1,32 +1,33 @@
 @import '/src/styles/variables.scss';
 
 .header{
+    height: 200px;
     display: flex;
     background-color: $c-pink;
     padding: 15px;
     justify-content: space-evenly;
+    align-items: center;
     @media screen and (min-width: $bp-medium) {
+        height: 250px;
         padding: 30px; 
     }
 }
 
 .logo{
-    width: 100px;
-    height: 68px;
-    position: absolute;
-    top: 20px;
-    left: 30px;
+    width: 400px;
+    height: 200px;
+    
     @media screen and (min-width: $bp-medium) {
-        width: 150px;
-        height: 102px;
-        top: 40px;
+        width: 550px;
+        height: 300px;  
     }
+
     @media screen and (min-width: $bp-large_medium) {
-        width: 200px;
-        height: 136px;
-        top: 40px;
+        width: 750px;
+        height: 350px;  
     }
 }
+
 .title{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;

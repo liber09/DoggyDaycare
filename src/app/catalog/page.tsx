@@ -32,8 +32,7 @@ const Catalog = async () => {
                                 height={100}
                                 width={100}
                             ></Image>
-                            <p className={styles.dogName}>{dog.name}</p>
-                            <p className={styles.dogGender}>Gender: {dog.sex}</p>
+                            <p className={dog.sex === 'female' ? styles.dogNameFemale : styles.dogNameMale}>{dog.name}</p>
                             <p className={styles.dogAge}>Age: {dog.age.toString()}</p>
                         </div>
                     </li>

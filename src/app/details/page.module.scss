@@ -24,9 +24,50 @@
     margin: 5px;
     text-transform: uppercase;
 }
+
+.dogBreed::first-letter{
+    text-transform: uppercase;
+}
+
+.ownerInfo{
+    margin-top: 15px;
+}
 .ownerName{
     margin-right: 3px;
 }
 .ownerLastName{
     margin-left: 3px;
+}
+
+.dogNameFemale{
+    font-size: 2em;
+    margin: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px $c-female;
+}
+
+.dogNameMale{
+    font-size: 2em;
+    margin: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px $c-male;
+}
+.namePresentContainer{
+    display:flex;
+}
+
+.present {
+    background: $c-present;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+}
+
+.notPresent{
+    background: $c-notPresent;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
 }

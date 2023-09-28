@@ -25,13 +25,14 @@ const Catalog = async () => {
             {dogs.record.map((dog:Dog, index:Key) => (
                 <Link key={dog.chipNumber} className={styles.link} href={{ pathname: '/details', query:{object: JSON.stringify(dog)}}}>
                     <li className={styles.dogListItem} key={index}>
-                        <div className={styles.card}>
+                        <div className={styles.card}>   
                             <Image className={styles.image}
                                 src={dog.img.toString()}
                                 alt={"image of dog.name"}
                                 height={100}
                                 width={100}
                             ></Image>
+                            <div className={dog.present === true ? styles.present : styles.notPresent}></div>
                             <p className={dog.sex === 'female' ? styles.dogNameFemale : styles.dogNameMale}>{dog.name}</p>
                             <p className={styles.dogAge}>Age: {dog.age.toString()}</p>
                         </div>

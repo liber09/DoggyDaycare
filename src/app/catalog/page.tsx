@@ -28,7 +28,7 @@ const Catalog = async () => {
                         <div className={styles.card}>   
                             <Image className={styles.image}
                                 src={dog.img.toString()}
-                                alt={"image of dog.name"}
+                                alt={`image of a ${dog.breed}`}
                                 height={100}
                                 width={100}
                             ></Image>

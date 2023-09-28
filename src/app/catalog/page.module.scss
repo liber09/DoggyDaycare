@@ -77,15 +77,16 @@
     margin-bottom: 10px;
     text-shadow: 0 0 1em rgba(242, 12, 12, 0.3);
 }
+.namePresentContainer{
+    display:flex;
+}
 
 .present {
     background: $c-present;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    position: absolute;
-    right: 10px;
-    top:10px;
+    margin: 10px 10px;
 }
 
 .notPresent{
@@ -93,7 +94,5 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    position: absolute;
-    right: 10px;
-    top:10px;
+    margin: 10px 10px;
 }

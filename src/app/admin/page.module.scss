@@ -1,0 +1,25 @@
+@import '/src/styles/variables.scss';
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  font-size: 3em;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.hero{
+  min-height: 40vh;
+  object-fit: cover;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (min-width: $bp-medium){
+    max-height: 60vh;
+  }
+}

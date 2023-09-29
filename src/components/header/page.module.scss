@@ -37,3 +37,16 @@
         font-size: 3.5em;
     }
 }
+.login{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    @media screen and (min-width: $bp-medium) {
+        width: 100px;
+        height: 100px;
+        top: 20px;
+        left: 20px;
+    }
+}

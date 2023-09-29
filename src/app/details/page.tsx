@@ -16,25 +16,23 @@ function DogDetails(){
     return(
         <div className={styles.container}>
             <div className={styles.card}>
-            <Image className={styles.image}
-                                src={dog.img.toString()}
-                                alt={"image of dog.name"}
-                                height={300}
-                                width={300}
-                            ></Image>
-            <div className={styles.namePresentContainer}>
-                <div className={dog.present === true ? styles.present : styles.notPresent}></div>
-                <p className={dog.sex === 'female' ? styles.dogNameFemale : styles.dogNameMale}>{dog.name}</p>
-            </div>
-            <p>Age: {dog.age.toString()}</p>
-            <p>Breed: {dog.breed}</p>
-            <p>Chipnumber: {dog.chipNumber}</p>
-            <div className={styles.ownerInfo}>
-                <p><span className={styles.ownerName}>{dog.owner.name}</span><span className={styles.ownerLastName}>{dog.owner.lastName}</span></p>
-                <p>{dog.owner.phoneNumber}</p>
-            </div>
-            
-            
+                <Image className={styles.image}
+                                    src={dog.img.toString()}
+                                    alt={"image of dog.name"}
+                                    height={300}
+                                    width={300}
+                                ></Image>
+                <div className={styles.namePresentContainer}>
+                    <div className={dog.present === true ? styles.present : styles.notPresent}></div>
+                    <p className={dog.sex === 'female' ? styles.dogNameFemale : styles.dogNameMale}>{dog.name}</p>
+                </div>
+                <p>Age: {dog.age.toString()}</p>
+                <p>Breed: {dog.breed}</p>
+                <p>Chipnumber: {dog.chipNumber}</p>
+                <div className={styles.ownerInfo}>
+                    <p><span className={styles.ownerName}>{dog.owner.name}</span><span className={styles.ownerLastName}>{dog.owner.lastName}</span></p>
+                    <p>{dog.owner.phoneNumber}</p>
+                </div>
             </div>
         </div>  
     )

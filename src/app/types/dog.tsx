@@ -1,11 +1,11 @@
 import Owner from "./owner";
 interface Dog{
-    name: String;
-    sex: String;
-    breed: String;
+    name: string;
+    sex: string;
+    breed: string;
     img: string;
     present: boolean;
-    age: Number;
+    age: number;
     chipNumber: string;
     owner: Owner;
 }

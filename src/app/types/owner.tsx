@@ -1,6 +1,6 @@
 interface Owner{
-    name: String;
-    lastName: String;
-    phoneNumber: String;
+    name: string;
+    lastName: string;
+    phoneNumber: string;
 }
 export default Owner;

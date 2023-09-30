@@ -23,7 +23,7 @@
   margin: 0 auto;
   width: 100vw;
   @media (min-width: $bp-medium){
-    max-height: 60vh;;
+    max-height: 60vh;
   }
 }
 .break{
@@ -35,6 +35,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: $bp-medium){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
 }
 .welcomeMessage{
   font-size: 4em;
@@ -42,20 +47,43 @@
   margin: 10px;
   width: 100vw;
   word-break:keep-all;
+  @media (min-width: $bp-medium){
+    width: 52vw;
+    order: 1;
+  }
+  @media (min-width: $bp-large){
+    max-width: 600px;
+  }
 }
-
+.bookingButtonContainer{
+  @media (min-width: $bp-medium){
+    width: 100%;
+    order: 3;
+  }
+}
 .bookButton{
   background-color: rgb(8, 254, 4);
   padding: 20px;
   font-size: 1.7em;
   border-radius: 10px;
   margin-top: 20px;
+  @media (min-width: $bp-medium){
+    display: flex; 
+    margin: auto;
+  }
 }
+
 .welcomeImage{
   object-fit:fill;
   width: 48vw;
   margin: 0;
   max-height: 300px;
   margin-top: 20px;
-  
+  @media (min-width: $bp-medium){
+    order: 2;
+    max-height: 400px;
+  }
+  @media (min-width: $bp-large){
+    max-width: 500px;
+  }
 }

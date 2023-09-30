@@ -17,7 +17,9 @@ export default function Home() {
         <p className={styles.welcomeMessage}>
           Please allow us to make your everydaylife easier
         </p>
-        <button className={styles.bookButton}>Make booking</button>
+        <div className={styles.bookingButtonContainer}>
+          <button className={styles.bookButton}>Make booking</button>
+        </div>
         <Image className={styles.welcomeImage}
           src={"/../images/dogwalking.jpg"}
           alt={"A man out walking with his dog. A bron/red dog."}

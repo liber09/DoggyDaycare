@@ -24,7 +24,7 @@ export default function RootLayout({
         <Menu></Menu>
         {children}
         <Footer></Footer>
-        </body>
+      </body>
        
     </html>
   )

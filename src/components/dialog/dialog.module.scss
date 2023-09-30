@@ -1,11 +1,20 @@
+@import '/src/styles/variables.scss';
+
 .dialog{
-    position:fixed;
-    top: 10%;
-    left:40%;
-    translate: x-50 y-50;
+    margin: auto;
     border-radius: 20px;
-    background-color: #2d3748;
+    background-color: $c-pink;
+    padding: 20px;
+}
+.dialogContent{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 3em;
+    color: white;
+    text-align: center;
 }
 
 .okButton{
@@ -15,5 +24,4 @@
     width: 60px;
     height: 40px;
     border-radius: 10px;
-    justify-self: center;
 }

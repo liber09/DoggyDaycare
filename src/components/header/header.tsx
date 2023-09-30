@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Header() {
     return (
-      <main className={styles.header}>
+      <header className={styles.header}>
         <Link href={"/"}>
           <Image className={styles.logo} 
             src={"/../images/logo.png"} 
@@ -22,6 +22,6 @@ export default function Header() {
           </Image>
         </Link>
         
-      </main>
+      </header>
     )
   }

@@ -1,6 +1,6 @@
 import styles from './page.module.scss'
 
-export default function Catalog() {
+export default function Schedule() {
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Schedule</h1>

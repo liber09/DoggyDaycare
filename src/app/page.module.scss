@@ -1,9 +1,13 @@
 @import '/src/styles/variables.scss';
 .main {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  @media (min-width: $bp-medium){
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
 }
 
 .title{
@@ -13,13 +17,45 @@
 }
 
 .hero{
-  min-height: 40vh;
+  max-height:40vh;
   object-fit: cover;
-  width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-
+  width: 100vw;
   @media (min-width: $bp-medium){
-    max-height: 60vh;
+    max-height: 60vh;;
   }
+}
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+.welcomeContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeMessage{
+  font-size: 4em;
+  text-align: center;
+  margin: 10px;
+  width: 100vw;
+  word-break:keep-all;
+}
+
+.bookButton{
+  background-color: rgb(8, 254, 4);
+  padding: 20px;
+  font-size: 1.7em;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.welcomeImage{
+  object-fit:fill;
+  width: 48vw;
+  margin: 0;
+  max-height: 300px;
+  margin-top: 20px;
+  
 }

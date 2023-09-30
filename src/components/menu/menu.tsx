@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react'
-import styles from './page.module.scss'
+import styles from './menu.module.scss'
 import Link from 'next/link'
 
 export default function Menu() {

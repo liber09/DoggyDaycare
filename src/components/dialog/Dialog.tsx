@@ -11,7 +11,7 @@ type Props = {
     children: React.ReactNode,
 }
 
-export default function Dialog({ title, onClose, onOk, children }: Props) {
+export default function Dialog({ title, children }: Props) {
 
     const searchParams = useSearchParams()
     const dialogRef = useRef<null | HTMLDialogElement>(null)
@@ -25,14 +25,8 @@ export default function Dialog({ title, onClose, onOk, children }: Props) {
         }
     }, [showDialog])
 
-    const closeDialog = () => {
-        dialogRef.current?.close()
-        onClose()
-    }
-
     const clickOk = () => {
-        onOk()
-        closeDialog()
+        dialogRef.current?.close()
     }
 
     const dialog: JSX.Element | null = showDialog === 'y'
@@ -53,7 +47,6 @@ export default function Dialog({ title, onClose, onOk, children }: Props) {
                 
             </dialog>
         ) : null
-
 
     return dialog
 }

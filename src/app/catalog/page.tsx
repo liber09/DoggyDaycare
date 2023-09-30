@@ -58,7 +58,7 @@ const Catalog = async () => {
                 </ul>
             </div>
 
-            <Dialog title={dog.name}>
+            <Dialog title={dog.name} returnLink={"/catalog"}>
                 <div className={styles.container}>
                     <div className={styles.card}>
                         <Image className={styles.image}

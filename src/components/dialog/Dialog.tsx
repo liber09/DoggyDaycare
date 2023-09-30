@@ -7,9 +7,10 @@ import Link from 'next/link'
 type Props = {
     title: string,
     children: React.ReactNode,
+    returnLink: string;
 }
 
-export default function Dialog({ title, children }: Props) {
+export default function Dialog({ title, children, returnLink }: Props) {
 
     const searchParams = useSearchParams()
     const dialogRef = useRef<null | HTMLDialogElement>(null)
@@ -33,7 +34,7 @@ export default function Dialog({ title, children }: Props) {
                 <h2 className={styles.title}>{title}</h2>
                 <div className={styles.dialogContent}>
                     {children}
-                        <Link href={"/catalog/"}>
+                        <Link href={returnLink}>
                             <button
                                 onClick={clickOk}
                                 className={styles.okButton}>

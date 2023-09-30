@@ -6,8 +6,6 @@ import Link from 'next/link'
 
 type Props = {
     title: string,
-    onClose: () => void,
-    onOk: () => void,
     children: React.ReactNode,
 }
 
@@ -35,16 +33,15 @@ export default function Dialog({ title, children }: Props) {
                 <h2 className={styles.title}>{title}</h2>
                 <div className={styles.dialogContent}>
                     {children}
-                    <Link href={"/catalog/"}>
-                        <button
-                            onClick={clickOk}
-                            className={styles.okButton}>
-                                OK
-                        </button>
-                    </Link>
+                        <Link href={"/catalog/"}>
+                            <button
+                                onClick={clickOk}
+                                className={styles.okButton}>
+                                    OK
+                            </button>
+                        </Link>
                 </div>    
-                
-                
+
             </dialog>
         ) : null
 

@@ -18,17 +18,6 @@ const getDogs = async () => {
     return res.json();
 }
 
-async function onClose() {
-
-    <Link href="/catalog/"></Link>
-    console.log("Modal has closed")
-}
-
-async function onOk() {
-    <Link href="/catalog/"></Link>
-    console.log("Ok was clicked")
-}
-
 const Catalog = async () => {
     const owner = {name:"testnissen", lastName:"nisse", phoneNumber:"23489072"}
     let dog:Dog = {name:"Test", age:4, chipNumber:"sd87324",sex:"male",breed:"test", img:"", present:false, owner: owner }
@@ -69,7 +58,7 @@ const Catalog = async () => {
                 </ul>
             </div>
 
-            <Dialog title={dog.name} onClose={onClose} onOk={onOk}>
+            <Dialog title={dog.name}>
                 <div className={styles.container}>
                     <div className={styles.card}>
                         <Image className={styles.image}

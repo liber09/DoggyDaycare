@@ -25,7 +25,6 @@ export default function Header() {
               height="100">
             </Image>
           </Link>
-          
         </header>
 
         <LoginDialog title={"Login"} returnLink={"/"}>

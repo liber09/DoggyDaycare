@@ -1,11 +1,37 @@
+@import '/src/styles/variables.scss';
+
 .container{
     display: flex;
-    height: 67vh;
-    width: 100vw;
+    height: 30vh;
+    width: 50vw;
     background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    border-radius: $br-normal;
+    margin-bottom: 20px;
 }
 
 .loginContainer{
     background-color: white;
     margin: auto;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+    border-radius: $br-normal;
+
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.userName{
+    margin-bottom: 10px;
+}
+
+.password{
+    margin-bottom: 10px;
+}
+
+.signinButton{
+    background-color: $c-buttonColor;
+    border-radius: $br-normal;
 }

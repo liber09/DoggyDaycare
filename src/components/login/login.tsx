@@ -4,7 +4,21 @@ export default function Login() {
     return (
         <div className={styles.container}>
             <div className={styles.loginContainer}>
-                <h1 className={styles.title}>Login</h1>
+                <form className={styles.loginForm}>
+                    <label htmlFor="userName">Username: </label>
+                    <input 
+                        className={styles.userName} 
+                        type={"text"}
+                        name={"userName"}>
+                    </input>
+                    <label htmlFor="password">Password: </label>
+                    <input 
+                        className={styles.password} 
+                        type={"password"}
+                        name={"password"}>    
+                    </input>
+                    <button className={styles.signinButton}>Sign in</button>
+                </form>
             </div>
             
         </div>

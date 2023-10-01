@@ -17,7 +17,7 @@ export default function Header() {
               height="500">
             </Image>
           </Link>
-          <Link href={{ pathname: 'login', query:{showLoginDialog:'y'}}}>
+          <Link href={{ pathname: '', query:{showLoginDialog:'y'}}}>
             <Image className={styles.login} 
               src={"/../images/login.png"}
               alt="Login icon" 

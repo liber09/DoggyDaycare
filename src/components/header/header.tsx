@@ -2,7 +2,7 @@
 import styles from './header.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
-import Dialog from '../dialog/Dialog'
+import LoginDialog from '../loginDialog/LoginDialog'
 import Login from '../login/login'
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
               height="500">
             </Image>
           </Link>
-          <Link href={{ pathname: 'login', query:{showDialog:'y'}}}>
+          <Link href={{ pathname: 'login', query:{showLoginDialog:'y'}}}>
             <Image className={styles.login} 
               src={"/../images/login.png"}
               alt="Login icon" 
@@ -28,11 +28,11 @@ export default function Header() {
           
         </header>
 
-        <Dialog title={"Login"} returnLink={"/"}>
+        <LoginDialog title={"Login"} returnLink={"/"}>
           <div className={styles.container}>
             <Login></Login>
           </div>
-        </Dialog>
+        </LoginDialog>
       </>
     )
   }

@@ -1,0 +1,27 @@
+@import '/src/styles/variables.scss';
+
+.dialog{
+    margin: auto;
+    border-radius: 20px;
+    background-color: $c-pink;
+    padding: 20px;
+}
+.dialogContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.okButton{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+}

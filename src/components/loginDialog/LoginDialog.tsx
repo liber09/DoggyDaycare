@@ -1,7 +1,7 @@
 "use client"
 import { useSearchParams } from 'next/navigation'
 import { useRef, useEffect } from 'react'
-import styles from './dialog.module.scss'
+import styles from './loginDialog.module.scss';
 import Link from 'next/link'
 
 type Props = {
@@ -10,25 +10,25 @@ type Props = {
     returnLink: string;
 }
 
-export default function Dialog({ title, children, returnLink }: Props) {
+export default function LoginDialog({ title, children, returnLink }: Props) {
 
     const searchParams = useSearchParams()
     const dialogRef = useRef<null | HTMLDialogElement>(null)
-    const showDialog = searchParams.get('showDialog')
+    const showLoginDialog = searchParams.get('showLoginDialog')
 
     useEffect(() => {
-        if (showDialog === 'y') {
+        if (showLoginDialog === 'y') {
             dialogRef.current?.showModal()
         } else {
             dialogRef.current?.close()
         }
-    }, [showDialog])
+    }, [showLoginDialog])
 
     const clickOk = () => {
         dialogRef.current?.close()
     }
 
-    const dialog: JSX.Element | null = showDialog === 'y'
+    const loginDialog: JSX.Element | null = showLoginDialog === 'y'
         ? (
             <dialog ref={dialogRef} className={styles.dialog}>
                 <h2 className={styles.title}>{title}</h2>
@@ -45,5 +45,5 @@ export default function Dialog({ title, children, returnLink }: Props) {
             </dialog>
         ) : null
 
-    return dialog
+    return loginDialog
 }

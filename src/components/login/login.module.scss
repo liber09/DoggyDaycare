@@ -23,15 +23,21 @@
     padding: 20px;
 }
 
-.userName{
-    margin-bottom: 10px;
+.label{
+    font-size: 1.2em;
 }
 
-.password{
+.userName, .password{
     margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
 }
 
 .signinButton{
     background-color: $c-buttonColor;
     border-radius: $br-normal;
+    padding: 10px;
+    color: white;
+    font-size: 1.2em;
 }

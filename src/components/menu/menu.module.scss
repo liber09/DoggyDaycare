@@ -22,13 +22,22 @@
 }
 
 .main_nav_toggle_open{
+    position: absolute;
+    z-index: 4000;
     transform: rotate(45deg);
-    top: 3em;
+    top: 4em;
     right: 2em;
-
+    width: 3em;
+    height: 0.6em;
+    border-radius: 0.2em;
+    
     &::before{
+        z-index: 4001;
+        position: absolute;
         transform: rotate(90deg);
-        top: 0;
+        top: -0.2em;
+        right: -0.2em;
+        @include burger_menu_line;
     }
 
     &::after{

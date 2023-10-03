@@ -1,6 +1,7 @@
 import styles from './login.module.scss'
 
-export default function Login() {
+export default function Login(signedIn: boolean) {
+    
     return (
         <div className={styles.container}>
             <div className={styles.loginContainer}>

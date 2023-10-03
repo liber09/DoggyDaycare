@@ -8,9 +8,10 @@ type Props = {
     title: string,
     children: React.ReactNode,
     returnLink: string;
+    signedIn: boolean;
 }
 
-export default function LoginDialog({ title, children, returnLink }: Props) {
+export default function LoginDialog({ title, children, returnLink, signedIn}: Props) {
 
     const searchParams = useSearchParams()
     const dialogRef = useRef<null | HTMLDialogElement>(null)
@@ -38,7 +39,7 @@ export default function LoginDialog({ title, children, returnLink }: Props) {
                         <button
                             onClick={clickOk}
                             className={styles.okButton}>
-                                OK
+                                Close
                         </button>
                     </Link>
                 </div>    

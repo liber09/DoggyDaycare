@@ -14,11 +14,14 @@
 }
 
 .logo{
-    width: 400px;
-    height: 200px;
+    margin-top: 55px;
+    width: 350px;
+    height: 150px;
+
     
     @media screen and (min-width: $bp-medium) {
-        width: 550px;
+        margin-top: 20px;
+        width: 650px;
         height: 300px;  
     }
 

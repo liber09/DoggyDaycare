@@ -6,26 +6,20 @@ import Link from 'next/link'
 export default function Menu() {
     const[isOpen,setIsOpen] = useState(false);
 
-    function handleClick(){
+    function handleClick(this: any){
         setIsOpen(!isOpen);
     }
-    useEffect(() =>
-    {
-        const mainNav = document.getElementById(".main_nav");
-        if(isOpen){
-            mainNav?.classList.add("open")
-        }else{
-            mainNav?.classList.remove("open")
-        }
-    })
+
+
+
     return (
-    <nav className={styles.main_nav}>
-        <button onClick={handleClick} className={styles.main_nav_toggle}></button>
-        <menu className={styles.main_menu}>
-            <Link className={styles.link} href={"/catalog"}><li className={styles.main_menu_item}>Catalog</li></Link>
-            <Link className={styles.link} href={"/register"}><li className={styles.main_menu_item}>Register dog</li></Link>
-            <Link className={styles.link} href={"/employees"}><li className={styles.main_menu_item}>Employees</li></Link>
-            <Link className={styles.link} href={"/schedule"}><li className={styles.main_menu_item}>Schedule</li></Link>
+    <nav className={isOpen === false ? styles.main_nav : styles.main_nav_open}>
+        <button onClick={handleClick} className={isOpen === false ? styles.main_nav_toggle : styles.main_nav_toggle_open}></button>
+        <menu className={isOpen === false ? styles.main_menu : styles.main_menu_open}>
+            <Link onClick={handleClick} className={styles.link} href={"/catalog"}><li className={isOpen === false ? styles.main_menu_item : styles.main_menu_item_open}>Catalog</li></Link>
+            <Link onClick={handleClick} className={styles.link} href={"/register"}><li className={isOpen === false ? styles.main_menu_item : styles.main_menu_item_open}>Register dog</li></Link>
+            <Link onClick={handleClick} className={styles.link} href={"/employees"}><li className={isOpen === false ? styles.main_menu_item : styles.main_menu_item_open}>Employees</li></Link>
+            <Link onClick={handleClick} className={styles.link} href={"/schedule"}><li className={isOpen === false ? styles.main_menu_item : styles.main_menu_item_open}>Schedule</li></Link>
         </menu>
     </nav>
     )

@@ -8,10 +8,9 @@ type Props = {
     title: string,
     children: React.ReactNode,
     returnLink: string;
-    signedIn: boolean;
 }
 
-export default function LoginDialog({ title, children, returnLink, signedIn}: Props) {
+export default function LoginDialog({ title, children, returnLink}: Props) {
 
     const searchParams = useSearchParams()
     const dialogRef = useRef<null | HTMLDialogElement>(null)

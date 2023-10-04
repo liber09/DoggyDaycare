@@ -8,7 +8,7 @@ export default function Home() {
     <main className={styles.main}>
       <Image className={styles.hero}
         src={"/../images/hero.png"}
-        alt={"Hero image of a dog in a snowy landscape"}
+        alt={"Image of a dog running towards the camera in a grass landscape"}
         height={2356}
         width={3534}>
       </Image>

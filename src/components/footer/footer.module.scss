@@ -1,9 +1,9 @@
 @import '/src/styles/variables.scss';
 
 .container{
-    position: relative;
     min-height: 100%;
     margin-top: 160px;
+    bottom: 0;
 
     @media screen and (min-width: $bp-medium) {
         margin-top: 300px;
@@ -13,8 +13,8 @@
 
 .footer{
     width: 100%;
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    bottom: 0;
     margin-top: auto;
     flex-direction: column;
     height: 150px;

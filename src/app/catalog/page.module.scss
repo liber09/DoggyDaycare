@@ -1,9 +1,10 @@
 @import '/src/styles/variables.scss';
+
 .dogList{
     display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     @media screen and (min-width: $bp-medium) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);

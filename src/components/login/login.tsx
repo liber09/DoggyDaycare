@@ -6,13 +6,13 @@ export default function Login(signedIn: boolean) {
         <div className={styles.container}>
             <div className={styles.loginContainer}>
                 <form className={styles.loginForm}>
-                    <label className={styles.label} htmlFor="userName">Username: </label>
+                    <label className={styles.label} htmlFor="userName">Username</label>
                     <input 
                         className={styles.userName} 
                         type={"text"}
                         name={"userName"}>
                     </input>
-                    <label className={styles.label} htmlFor="password">Password: </label>
+                    <label className={styles.label} htmlFor="password">Password</label>
                     <input 
                         className={styles.password} 
                         type={"password"}

@@ -38,7 +38,7 @@ export default function LoginDialog({ title, children, returnLink, signedIn}: Pr
                     <Link href={returnLink}>
                         <button
                             onClick={clickOk}
-                            className={styles.okButton}>
+                            className={styles.closeButton}>
                                 Close
                         </button>
                     </Link>

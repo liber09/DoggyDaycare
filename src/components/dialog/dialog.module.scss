@@ -3,7 +3,7 @@
 .dialog{
     margin: auto;
     border-radius: 20px;
-    background-color: $c-pink;
+    background-color: $c-cardColor;
     padding: 20px;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
 }
@@ -14,15 +14,15 @@
 }
 .title{
     font-size: 3em;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 .okButton{
     background-color: $c-buttonColor;
     color: white;
-    font-size: 20px;
-    width: 60px;
-    height: 40px;
+    font-size: 30px;
+    width: 80px;
+    height: 60px;
     border-radius: 10px;
 }

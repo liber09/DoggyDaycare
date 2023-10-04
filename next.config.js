@@ -3,9 +3,13 @@ const nextConfig = {
     images:{
         remotePatterns:[
             {
-                hostname: "images.dog.ceo",
-                hostname: "imageupload.io",
-            }
+                protocol: 'https',
+                hostname: 'images.dog.ceo'
+            },
+            {
+                protocol: 'https',
+                hostname: 'imageupload.io'
+            },
         ]
     }
 }

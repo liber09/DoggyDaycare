@@ -7,7 +7,7 @@ export default function Home() {
     
     <main className={styles.main}>
       <Image className={styles.hero}
-        src={"/../images/hero.png"}
+        src={"https://imageupload.io/ib/SMvfV7bUd7OoG6O_1696446684.png"}
         alt={"Image of a dog running towards the camera in a"}
         height={2356}
         width={3534}>
@@ -21,7 +21,7 @@ export default function Home() {
           <button className={styles.bookButton}>Make booking</button>
         </div>
         <Image className={styles.welcomeImage}
-          src={"https://1drv.ms/i/s!AqGzmJuRv_qohIIn_mabTuHKYP1kvA?e=XzlvpO"}
+          src={"https://imageupload.io/ib/32uX6lacwtrjEQM_1696446682.jpg"}
           alt={"A man out walking with his dog. A brown/red dog."}
           height={944}
           width={542}>

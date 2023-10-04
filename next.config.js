@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns:[
             {
                 hostname: "images.dog.ceo",
-                hostname:  "1drv.ms"
+                hostname: "imageupload.io",
             }
         ]
     }

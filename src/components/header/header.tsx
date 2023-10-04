@@ -11,7 +11,7 @@ export default function Header() {
         <header className={styles.header}>
           <Link href={"/"}>
             <Image className={styles.logo} 
-              src={"/../images/logo.png"} 
+              src={"https://imageupload.io/ib/0iCiiwaDSnZuUxy_1696446682.png"} 
               alt="Logo with a puppy dog playing with a butterfly" 
               width="500" 
               height="500">
@@ -19,7 +19,7 @@ export default function Header() {
           </Link>
           <Link href={{ pathname: '', query:{showLoginDialog:'y'}}}>
             <Image className={styles.login} 
-              src={"/../images/login.png"}
+              src={"https://imageupload.io/ib/SdHGMatadBjHUhF_1696446682.png"}
               alt="Login icon" 
               width="100" 
               height="100">

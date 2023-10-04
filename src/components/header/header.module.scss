@@ -5,7 +5,7 @@
     display: flex;
     background-color: $c-pink;
     padding: 15px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     @media screen and (min-width: $bp-medium) {
         height: 250px;
